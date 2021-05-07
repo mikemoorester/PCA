@@ -1,3 +1,9 @@
+#
+build
+build/*
+# In the data directory ignore output files
+*out*
+#
 # Prerequisites
 *.d
 
