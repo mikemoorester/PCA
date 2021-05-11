@@ -1,5 +1,5 @@
 # PCA
-Exploring PCA applications, a bit of fun
+Exploring PCA applications, for a bit of fun
 
 # Overview
 Princple Component Analysis (PCA) is a technique used to help interpret large data sets, by reducing the dimensionality, while at the same time miniming information loss.
@@ -18,6 +18,7 @@ cmake  - modules to help cmake find dependencies
 docs   - randomn notes I'm putting together
 src
   cpp  - cpp source code
+  python - python code for an overview of the programs see: https://github.com/mikemoorester/PCA/wiki/Python-Programs 
 
 # Acknowledgements
 
