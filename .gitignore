@@ -1,6 +1,8 @@
 #
 build
 build/*
+#
+src/python/data/
 # In the data directory ignore output files
 *out*
 #
