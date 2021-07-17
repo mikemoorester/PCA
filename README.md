@@ -1,5 +1,5 @@
 # PCA
-Exploring PCA applications, a bit of fun
+Exploring PCA applications, for a bit of fun
 
 # Overview
 Princple Component Analysis (PCA) is a technique used to help interpret large data sets, by reducing the dimensionality, while at the same time miniming information loss.
@@ -9,8 +9,15 @@ The new variables are defined by the dataset the technique is being applied to, 
 
 PCA can be based on either the covariance matrix or the correlation matrix.
 
-The main use of PCA are for descriptive, rather than inferential purposes.
-PCA needs no distributional assumptions, and is an adaptive exploratory method which can be used on numerical data of various types.
+The main use of PCA are for descriptive, rather than inferential purposes, there is no need for any distributional assumptions, and is an adaptive.
+So it is a good tool for exploratory work on large data sets.
+
+There is still a need to scale the data set, typically all 'features' are set to have a mean of zero
+
+## Anomaly detection
+
+For anomaly detection, each new input is analyzed, and the anomaly detection algorithm computes its projection onto the eigenvectors, together with a normalized reconstruction error. The normalized error is then used as the anomaly score. The higher the error, the more anomalous the instance is.
+
 
 # Lay out of Repository
 
@@ -18,6 +25,7 @@ cmake  - modules to help cmake find dependencies
 docs   - randomn notes I'm putting together
 src
   cpp  - cpp source code
+  python - python code for an overview of the programs see: https://github.com/mikemoorester/PCA/wiki/Python-Programs 
 
 # Acknowledgements
 
