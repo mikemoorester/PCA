@@ -9,13 +9,10 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 
 #
-# You will need to download and convert the MNIST data set
-# see the program: mnist2csv.py
-# This has notes of where to obtain the data and will convert
-# the idx3 format to csv
-#
+# Download and convert the MNIST data set
+# see the program: mnist2csv.py (converts idx3 data to csv)
+
 # Load the dataset
-#
 
 df = pd.read_csv('data/mnist_train.csv')
 #print( df.head() )
@@ -46,7 +43,7 @@ X_train, X_test, y_train, y_test = train_test_split(df[pixel_colnames], df['labe
 
 # Standardize the data:
 # PCA and logisitic regression are sensitive to the scale of your features. 
-# set the  data onto unit scale (mean = 0 and variance = 1) by using StandardScaler
+# set the data onto unit scale (mean = 0 and variance = 1) by using StandardScaler
 
 scaler = StandardScaler()
 
@@ -78,9 +75,8 @@ X_train = pca.transform(X_train)
 X_test = pca.transform(X_test)
 
 # Logistic Regression 
-#
-# If you turn PCA off, you obtain a very similar accuracy as to using the
-# complete data set
+# - If you turn PCA off, you obtain a very similar accuracy as to using the
+#   complete data set
 
 clf = LogisticRegression()
 clf.fit(X_train, y_train)
